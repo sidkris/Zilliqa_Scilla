@@ -1,0 +1,10 @@
+scilla_version 0
+
+contract NameStorage (owner:ByStr20)
+
+field username:String = "Sid"
+
+transition changeUserName(newUserName:String)
+  username:=newUserName;
+  accept
+end
